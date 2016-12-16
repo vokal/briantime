@@ -5,8 +5,10 @@ var moment = require( "moment-timezone" );
 
 const pastas = require( "./pastas.json" );
 
+const secrets = require( "./secrets.json" );
+
 const bot = new SlackBot({
-    token: "xoxb-117721239877-D5HOWGGH8qQq6m81694qVX3u",
+    token: secrets.apiToken,
     name: "BrianTime"
 });
 
